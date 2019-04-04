@@ -3,15 +3,15 @@ module.exports = {
     title: 'DSC-DTU',
     siteUrl: 'https://sosc.org.in',
     events: {
-      title: 'SOSC - Events',
+      title: 'DSC-DTU - Events',
       siteUrl: 'https://sosc.org.in/events',
     },
     team: {
-      title: 'SOSC - Team',
+      title: 'DSC-DTU Team',
       siteUrl: 'https://sosc.org.in/team',
     },
     blog: {
-      title: 'SOSC - Blog',
+      title: 'DSC-DTU - Blog',
       siteUrl: 'https://sosc.org.in/blog',
     },
     memberDetails: {
