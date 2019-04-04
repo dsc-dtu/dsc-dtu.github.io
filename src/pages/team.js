@@ -40,16 +40,12 @@ const TeamsPage = ({ data }) => (
             />
 
             <div className="member-details">
-              <h3 className="name">Prakhyath Rai</h3>
-              <p className="designation">Faculty Coordinator</p>
+              <h3 className="name">Kshitij Bansal</h3>
+              <p className="designation">DSC Lead</p>
             </div>
           </div>
 
-          <MemberCard
-            username="manjesh1"
-            full_name="Manjesh P Shetty"
-            designation="Mozilla Regional Coordinator"
-          />
+         
         </div>
         <h2>Core Members</h2>
         <div className="team-section">{getMembers(data)}</div>
@@ -65,7 +61,7 @@ export default TeamsPage
 export const teamQuery = graphql`
   query membersQuery {
     allMarkdownRemark(
-      sort: { fields: [frontmatter___designation], order: ASC }
+      sort: { fields: [frontmatter___designation], order: DESC }
       filter: { fileAbsolutePath: { regex: "/members/.*md$/" } }
     ) {
       edges {
@@ -78,7 +74,7 @@ export const teamQuery = graphql`
         }
       }
     }
-    imageCoord1: file(relativePath: { eq: "images/prakhyath_rai.jpg" }) {
+    imageCoord1: file(relativePath: { eq: "images/KshitijBansal.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 200) {
           ...GatsbyImageSharpFluid_tracedSVG
