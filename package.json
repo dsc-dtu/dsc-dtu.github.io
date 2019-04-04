@@ -22,6 +22,7 @@
     "gatsby-source-filesystem": "^2.0.10",
     "gatsby-transformer-remark": "^2.1.20",
     "gatsby-transformer-sharp": "^2.1.9",
+    "gh-pages": "^2.0.1",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "react": "^16.6.3",
@@ -35,8 +36,9 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "start": "gatsby develop",
+    "deploy": "node deploy.js",
+    "build-deploy": "npm run build && npm run deploy",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
