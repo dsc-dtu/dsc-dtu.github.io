@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'SOSC',
+    title: 'DSC-DTU',
     siteUrl: 'https://sosc.org.in',
     events: {
       title: 'SOSC - Events',

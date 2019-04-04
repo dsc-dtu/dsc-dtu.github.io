@@ -5,19 +5,18 @@ const Footer = ({ siteTitle }) => (
     <div className="container">
       <div className="info-area">
         <div className="column">
-          <a href="https://github.com/so-sc">GitHub</a>
-          <a href="https://instagram.com/sosc.sahyadri">Instagram</a>
-          <a href="https://linkedin.com/company/sosc-sahyadri">LinkedIn</a>
+          <a href="https://github.com/dsc-dtu">GitHub</a>
+          <a href="https://www.instagram.com/googledsc_dtu/">Instagram</a>
+          <a href="https://linkedin.com/company/dsc-dtu">LinkedIn</a>
         </div>
         <div className="column">
-          <a href="https://github.com/so-sc/code-of-conduct">Community Guidelines</a>
-          <a href="https://github.com/so-sc/code-of-conduct">Code of Conduct</a>
+          
         </div>
         <div className="column">
           <p>
-            <strong>Sahyadri Open-Source Community</strong><br/>
-            Sahyadri College of Engineering and Management,
-            Adyar, Mangalore - 575007 IN<br/><br/>
+            <strong>DSC-DTU</strong><br/>
+            Delhi Technological University
+            Bawana Rd, Daulatpur Village, Rohini, Delhi, 110042<br/><br/>
             sosc@sahyadri.edu.in<br/>
             +91 9539518599
           </p>
@@ -25,7 +24,7 @@ const Footer = ({ siteTitle }) => (
       </div>
     </div>
     <div className="copyright-area">
-      <p>SOSC © { new Date().getFullYear() }</p>
+      <p>DSC © { new Date().getFullYear() }</p>
     </div>
   </footer>
 )

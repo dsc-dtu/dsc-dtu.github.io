@@ -16,14 +16,16 @@ const IndexPage = props => (
               alt="sosc logo"
             />
             <p className="sosc-header">
-              Sahyadri
+              Google
               <br />
-              Open Source Community
+              Developer Student Club(DTU)
             </p>
             <p>
-              A community driven by tech enthusiasts and open-source
-              contributors, to help young students to be part of the open-source
-              ecosystem by providing training and skill development.
+            Developer Student Club (DSC) is a Google Developers program for university students 
+            to learn mobile and web development skills. The club will be open to any student, 
+            ranging from novice developers who are just starting, to advanced developers who want 
+            to further their skills. The club is intended as a space for students to try out new
+             ideas and collaborate to solve mobile and web development problems.
             </p>
             <a
               href="https://goo.gl/forms/aUAhUoOI7a4taYPc2"
@@ -49,14 +51,14 @@ const IndexPage = props => (
             alt="hero image"
           />
           <div className="hero-texts">
-            <p className="hero-header">Explore clubs and Activities</p>
+            <p className="hero-header">What do we do?</p>
             <div className="dash" />
             <p>
-              SOSC is a conglomeration of clubs and individuals who contribute
-              to the community by helping us conduct events and activities.
-              there are numerous clubs and experts who help shape the community
-              to be pro-active. Mozilla Campus Clubs, Developer Students clubs,
-              and the GitHub Campus Expert are to name a few.
+            Google Developer Groups can take many forms - from just a 
+            few people getting together to watch some videos, to large 
+            gatherings with demos, tech talks, hackathons and conferences. 
+            We work on various technical domains and try to make use 
+            of Google Technologies to empower the audience around us.
             </p>
             <Link className="btn-hero-green" to="/clubs">Learn More →  </Link>
           </div>
@@ -66,15 +68,12 @@ const IndexPage = props => (
       <div className="container">
         <section className="hero-section3">
           <div className="hero-texts">
-            <p className="hero-header">Get Trained by Experts</p>
+            <p className="hero-header">Get Trained in Various Domains</p>
             <div className="dash" />
-            <p>
-              SOSC is all about helping each other to learn and improve, we
-              conduct workshops and trainings led by speakers from other
-              technical communities, and student experts. Keeping up to date
-              with latest technologies and learning new things is what most of
-              love. Here is your chance to attend workshops, training and even
-              host non-profit events to help others.
+            <p>The DSC-DTU provide students with the opportunity to:
+             Grow their knowledge on developer technologies and more through peer to peer workshops and events, 
+             gain relevant industry experience by solving problems for local organizations with technology based solutions and
+             showcase their prototypes and solutions to their local community and industry leaders.
             </p>
           </div>
           <Img
@@ -97,11 +96,10 @@ const IndexPage = props => (
             <p className="hero-header">Get Connected !</p>
             <div className="dash" />
             <p>
-              Meet people with similar interest to work together on projects and
+              Meet our memebers with similar interest to work together on projects and
               host events to build a better collaborative environment. We are
-              more than 100 members with interests on various fields of
-              technology here to know each other and get connected. Meet our
-              members to know more about us and build something cool!
+              more than 15 members with interests on various fields of
+              technology here to know each other and get connected.
             </p>
             <Link to="/team" className="btn-hero-green">
               Learn More
@@ -116,7 +114,7 @@ const IndexPage = props => (
 export const firstSiteImages = graphql`
   fragment firstSiteImages on File {
     childImageSharp {
-      fluid(maxWidth: 1000) {
+      fluid(maxWidth: 2500) {
         ...GatsbyImageSharpFluid_tracedSVG
       }
     }
@@ -125,7 +123,7 @@ export const firstSiteImages = graphql`
 
 export const pageQuery = graphql`
   query {
-    imageFirst: file(relativePath: { eq: "images/logo_grad.png" }) {
+    imageFirst: file(relativePath: { eq: "images/dsc-logo.png" }) {
       ...firstSiteImages
     }
     imageOne: file(relativePath: { eq: "images/hero_main.png" }) {
