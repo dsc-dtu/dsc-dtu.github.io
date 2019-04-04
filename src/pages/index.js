@@ -16,9 +16,7 @@ const IndexPage = props => (
               alt="sosc logo"
             />
             <p className="sosc-header">
-              Google
-              <br />
-              Developer Student Club(DTU)
+              Google Developer Student Club (DTU)
             </p>
             <p>
               Developer Student Club (DSC) is a Google Developers program for
