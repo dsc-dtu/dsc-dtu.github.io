@@ -1,11 +1,14 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Img from 'gatsby-image'
+import React from "react";
+import Link from "gatsby-link";
+import Img from "gatsby-image";
 
 const BlogCard = ({ data }) => (
   <div className="blog-card elevate white-bg">
     <div className="cover">
-      <Img style={{height: '100%'}} fluid={data.cover.childImageSharp.fluid} />
+      <Img
+        style={{ height: "100%" }}
+        fluid={data.cover.childImageSharp.fluid}
+      />
     </div>
     <div className="card-content">
       <div className="tags">{data.tags}</div>
@@ -26,6 +29,6 @@ const BlogCard = ({ data }) => (
       </div>
     </div>
   </div>
-)
+);
 
-export default BlogCard
+export default BlogCard;

@@ -1,29 +1,32 @@
-import React from 'react'
-import { DiscussionEmbed } from 'disqus-react'
-import MemberCard from '../components/member_card'
-import Layout from '../components/indexLayout'
-import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import CustomHelmet from '../components/CustomHelmet';
-import GatsbyConfig from '../../gatsby-config';
+import React from "react";
+import { DiscussionEmbed } from "disqus-react";
+import MemberCard from "../components/member_card";
+import Layout from "../components/indexLayout";
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
+import CustomHelmet from "../components/CustomHelmet";
+import GatsbyConfig from "../../gatsby-config";
 
 export default function BlogTemplate({ data }) {
-  const { markdownRemark: post } = data
-  const disqusShortname = 'sosc'
+  const { markdownRemark: post } = data;
+  const disqusShortname = "sosc";
   const disqusConfig = {
     identifier: post.frontmatter.title,
-    title: post.frontmatter.title,
-  }
+    title: post.frontmatter.title
+  };
 
   return (
     <Layout>
       <div className="page white-bg">
-      <CustomHelmet page={{
+        <CustomHelmet
+          page={{
             title: `${post.frontmatter.title}`,
-            siteUrl: `${GatsbyConfig.siteMetadata.link}${post.frontmatter.slug}`,
+            siteUrl: `${GatsbyConfig.siteMetadata.link}${
+              post.frontmatter.slug
+            }`,
             image: `${post.frontmatter.cover.publicURL}`
-        }}
-        image={post.frontmatter.cover.publicURL}
+          }}
+          image={post.frontmatter.cover.publicURL}
         />
         <div className="container">
           <div className="blog-page">
@@ -46,7 +49,9 @@ export default function BlogTemplate({ data }) {
                   <img
                     alt=""
                     className="author-img"
-                    src={`https://avatars1.githubusercontent.com/${post.frontmatter.author}?size=100`}
+                    src={`https://avatars1.githubusercontent.com/${
+                      post.frontmatter.author
+                    }?size=100`}
                   />
                   <div className="author-details">
                     <div className="author-name">
@@ -90,7 +95,7 @@ export default function BlogTemplate({ data }) {
         </div>
       </div>
     </Layout>
-  )
+  );
 }
 
 export const postQuery = graphql`
@@ -117,4 +122,4 @@ export const postQuery = graphql`
       }
     }
   }
-`
+`;

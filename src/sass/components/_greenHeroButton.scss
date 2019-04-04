@@ -1,7 +1,7 @@
 .btn-hero-green {
-    background: linear-gradient(45deg, #08D777, #1FD656);
-    background: -webkit-linear-gradient(45, #08D777, #1FD656);
-    background: -moz-linear-gradient(45, #08D777, #1FD656);
+    background: linear-gradient(45deg, rgb(63, 8, 215), rgb(31, 54, 214));
+    background: -webkit-linear-gradient(45, rgb(63, 8, 215), rgb(31, 54, 214));
+    background: -moz-linear-gradient(45, rgb(63, 8, 215), rgb(31, 54, 214));
 
     -webkit-box-shadow: 0px 5px 10px 0px rgba(31,214,86,0.32);
     -moz-box-shadow: 0px 5px 10px 0px rgba(31,214,86,0.32);
@@ -16,9 +16,9 @@
     transition: all 0.5s ease-in-out;
 
     &:hover {
-        background: linear-gradient(45deg, rgb(7, 228, 125), #1FD656);
-        background: -webkit-linear-gradient(45, rgb(7, 228, 125), #1FD656);
-        background: -moz-linear-gradient(45, rgb(7, 228, 125), #1FD656);
+        background: linear-gradient(45deg, rgb(66, 133, 250), rgb(66, 133, 250));
+        background: -webkit-linear-gradient(45, #4285F4, #4285F4);
+        background: -moz-linear-gradient(45, #4285F4, #4285F4);
         -webkit-box-shadow: 0px 7px 20px 0px rgba(15,255,111,0.52);
         -moz-box-shadow: 0px 7px 20px 0px rgba(15,255,111,0.52);
         box-shadow: 0px 7px 20px 0px rgba(15,255,111,0.52);

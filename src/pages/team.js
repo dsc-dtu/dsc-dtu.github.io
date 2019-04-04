@@ -1,15 +1,15 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import GatsbyConfig from '../../gatsby-config'
-import CustomHelmet from '../components/CustomHelmet';
-import Layout from '../components/indexLayout'
-import MemberCard from '../components/member_card'
-import Img from 'gatsby-image'
+import React from "react";
+import { graphql } from "gatsby";
+import GatsbyConfig from "../../gatsby-config";
+import CustomHelmet from "../components/CustomHelmet";
+import Layout from "../components/indexLayout";
+import MemberCard from "../components/member_card";
+import Img from "gatsby-image";
 
 function getMembers(data) {
-  let members = []
+  let members = [];
 
-  let memberList = data.allMarkdownRemark.edges
+  let memberList = data.allMarkdownRemark.edges;
 
   memberList.map(element => {
     return members.push(
@@ -18,10 +18,10 @@ function getMembers(data) {
         full_name={element.node.frontmatter.name}
         designation={element.node.frontmatter.designation}
       />
-    )
-  })
+    );
+  });
 
-  return members
+  return members;
 }
 
 const TeamsPage = ({ data }) => (
@@ -33,7 +33,6 @@ const TeamsPage = ({ data }) => (
         <div className="team-section">
           {/* Card for coordinators */}
           <div className="member-card white-bg elevate">
-
             <Img
               fluid={data.imageCoord1.childImageSharp.fluid}
               className="profile-pic"
@@ -44,19 +43,15 @@ const TeamsPage = ({ data }) => (
               <p className="designation">DSC Lead</p>
             </div>
           </div>
-
-         
         </div>
         <h2>Core Members</h2>
         <div className="team-section">{getMembers(data)}</div>
       </div>
     </div>
   </Layout>
-)
+);
 
-export default TeamsPage
-
-
+export default TeamsPage;
 
 export const teamQuery = graphql`
   query membersQuery {
@@ -82,7 +77,4 @@ export const teamQuery = graphql`
       }
     }
   }
-
-`
-
-
+`;

@@ -1,13 +1,13 @@
-import React from 'react'
-import Card from '../components/event_card'
-import Layout from '../components/indexLayout'
-import { graphql } from 'gatsby'
-import GatsbyConfig from '../../gatsby-config'
-import CustomHelmet from '../components/CustomHelmet';
+import React from "react";
+import Card from "../components/event_card";
+import Layout from "../components/indexLayout";
+import { graphql } from "gatsby";
+import GatsbyConfig from "../../gatsby-config";
+import CustomHelmet from "../components/CustomHelmet";
 
 function getEvents(data) {
-  let events = []
-  let eventList = data.allMarkdownRemark.edges
+  let events = [];
+  let eventList = data.allMarkdownRemark.edges;
 
   eventList.map(({ node }) => {
     return events.push(
@@ -17,9 +17,9 @@ function getEvents(data) {
         title={node.frontmatter.name}
         date={node.frontmatter.date}
       />
-    )
-  })
-  return events
+    );
+  });
+  return events;
 }
 
 const EventsPage = ({ data }) => (
@@ -31,9 +31,9 @@ const EventsPage = ({ data }) => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default EventsPage
+export default EventsPage;
 
 export const eventsQuery = graphql`
   query eventsQuery {
@@ -62,4 +62,4 @@ export const eventsQuery = graphql`
       }
     }
   }
-`
+`;

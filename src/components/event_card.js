@@ -1,18 +1,18 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import moment from 'moment'
-import DateIcon from '../images/date_icon.svg'
-import Img from 'gatsby-image'
+import React from "react";
+import Link from "gatsby-link";
+import moment from "moment";
+import DateIcon from "../images/date_icon.svg";
+import Img from "gatsby-image";
 
 function isUpcoming(date) {
-  let eventDate = moment(date, 'DD-MMM-YYYY')
-  let today = new Date()
-  console.log(eventDate)
-  today.setHours(0, 0, 0, 0)
+  let eventDate = moment(date, "DD-MMM-YYYY");
+  let today = new Date();
+  console.log(eventDate);
+  today.setHours(0, 0, 0, 0);
   if (today < eventDate._d) {
-    return ` <span color="#02b839">(Upcoming)</span>`
+    return ` <span color="#4285f4">(Upcoming)</span>`;
   } else {
-    return ``
+    return ``;
   }
 }
 
@@ -33,13 +33,13 @@ const Card = props => (
           <p
             className="card-date-text"
             dangerouslySetInnerHTML={{
-              __html: `${props.date}${isUpcoming(props.date)}`,
+              __html: `${props.date}${isUpcoming(props.date)}`
             }}
           />
         </div>
       </div>
     </div>
   </div>
-)
+);
 
-export default Card
+export default Card;

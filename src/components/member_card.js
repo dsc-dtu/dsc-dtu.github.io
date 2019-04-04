@@ -1,8 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const MemberCard = ({ username, full_name, designation }) => (
   <div className="member-card elevate white-bg">
-
     <img
       className="profile-pic"
       alt=""
@@ -14,6 +13,6 @@ const MemberCard = ({ username, full_name, designation }) => (
       <p className="designation">{designation}</p>
     </div>
   </div>
-)
+);
 
-export default MemberCard
+export default MemberCard;

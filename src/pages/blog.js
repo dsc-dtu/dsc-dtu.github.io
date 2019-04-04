@@ -1,17 +1,17 @@
-import React from 'react'
-import BlogCard from '../components/blog_card'
-import Layout from '../components/indexLayout'
-import { graphql } from 'gatsby'
+import React from "react";
+import BlogCard from "../components/blog_card";
+import Layout from "../components/indexLayout";
+import { graphql } from "gatsby";
 
 function getBlogs(data) {
-  let blogs = []
-  let blogList = data.allMarkdownRemark.edges
+  let blogs = [];
+  let blogList = data.allMarkdownRemark.edges;
 
   blogList.forEach(element => {
-    blogs.push(<BlogCard data={element.node.frontmatter} />)
-  })
+    blogs.push(<BlogCard data={element.node.frontmatter} />);
+  });
 
-  return blogs
+  return blogs;
 }
 
 const BlogsPage = ({ data }) => (
@@ -32,9 +32,9 @@ const BlogsPage = ({ data }) => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default BlogsPage
+export default BlogsPage;
 
 export const blogsQuery = graphql`
   query blogsQuery {
@@ -67,4 +67,4 @@ export const blogsQuery = graphql`
       }
     }
   }
-`
+`;
