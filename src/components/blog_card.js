@@ -17,11 +17,6 @@ const BlogCard = ({ data }) => (
       </div>
       <div className="description">{data.description}</div>
       <div className="author-box">
-        <img
-          className="author-img"
-          alt=""
-          src={`https://avatars1.githubusercontent.com/${data.author}?size=100`}
-        />
         <div className="author-details">
           <div className="author-name">{data.author}</div>
           <div className="date">{data.date}</div>
