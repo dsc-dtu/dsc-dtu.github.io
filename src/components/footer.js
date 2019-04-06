@@ -10,19 +10,16 @@ const Footer = ({ siteTitle }) => (
           <a href="https://linkedin.com/company/dsc-dtu">LinkedIn</a>
         </div>
         <div className="column" />
-        
+        <div className="column">
+          <strong>Delhi Technological University</strong> Bawana Road, Daulatpur Village, Rohini, Delhi, 110042    
+        </div>
       </div>
     </div>
-    <div className="copyright-area">
-      <p>
-      
-      Delhi Technological University Bawana Rd, Daulatpur Village,<br /> Rohini,
-      Delhi, 110042
-      </p>
+    <div className="copyright-area" style={{textAlign: 'center'}}>
       <p>
       dsc.dtu@gmail.com
       <br />
-      +91 96501 29191{new Date().getFullYear()}</p>
+      +91 96501 29191</p>
     </div>
   </footer>
 );
