@@ -10,7 +10,7 @@ footer {
 
     .info-area {
         display: flex;
-        padding: 10px;
+        padding: 5px;
         justify-content: space-between;
         flex-direction: row;
 
@@ -43,6 +43,6 @@ footer {
     .copyright-area {
         background-color: #303030;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
     }
 }

@@ -32,7 +32,14 @@ const TeamsPage = ({ data }) => (
         <h2>Co-ordinators</h2>
         <div className="team-section">
           {/* Card for coordinators */}
-          <div className="member-card white-bg elevate">
+          <div className="member-card white-bg elevate"
+            onClick={() => window.open(`https://github.com/zenith1598`, "_blank")}
+            onMouseEnter={() => {
+              document.body.style.cursor = "pointer";
+            }}
+            onMouseLeave={() => {
+              document.body.style.cursor = "default";
+            }}>
             <Img
               fluid={data.imageCoord1.childImageSharp.fluid}
               className="profile-pic"
