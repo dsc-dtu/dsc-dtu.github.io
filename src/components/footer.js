@@ -6,8 +6,9 @@ const Footer = ({ siteTitle }) => (
       <div className="info-area">
         <div className="column">
           <a href="https://github.com/dsc-dtu">GitHub</a>
-          <a href="https://www.instagram.com/googledsc_dtu/">Instagram</a>
           <a href="https://linkedin.com/company/dsc-dtu">LinkedIn</a>
+          <a href="https://www.instagram.com/googledsc_dtu/">Instagram</a>
+          <a href="https://www.facebook.com/pg/googledscdtu">Facebook</a>
         </div>
         <div className="column" />
         <div className="column">

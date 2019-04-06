@@ -22,4 +22,4 @@ Elit veniam magna adipisicing enim incididunt qui officia sit adipisicing irure 
 - [Github](https://github.com/dsc-dtu.com)
 - [LinkedIn](https://www.linkedin.com/company/dsc-dtu/)
 - [Facebook](https://facebook.com/pg/googledscdtu)
-- [Instagram](https://www.instagram.com/googledsc_dtu/)
+- [Instagram](https://www.instagram.com/googledscdtu/)
