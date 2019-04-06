@@ -132,7 +132,7 @@ export const pageQuery = graphql`
     imageThree: file(relativePath: { eq: "images/hero_github.png" }) {
       ...firstSiteImages
     }
-    imageFour: file(relativePath: { eq: "images/hero_connect_.png" }) {
+    imageFour: file(relativePath: { eq: "images/connection.png" }) {
       ...firstSiteImages
     }
   }

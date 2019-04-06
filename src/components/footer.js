@@ -10,23 +10,19 @@ const Footer = ({ siteTitle }) => (
           <a href="https://linkedin.com/company/dsc-dtu">LinkedIn</a>
         </div>
         <div className="column" />
-        <div className="column">
-          <p>
-            <strong>DSC-DTU</strong>
-            <br />
-            Delhi Technological University Bawana Rd, Daulatpur Village, Rohini,
-            Delhi, 110042
-            <br />
-            <br />
-            sosc@sahyadri.edu.in
-            <br />
-            +91 9539518599
-          </p>
-        </div>
+        
       </div>
     </div>
     <div className="copyright-area">
-      <p>DSC © {new Date().getFullYear()}</p>
+      <p>
+      
+      Delhi Technological University Bawana Rd, Daulatpur Village,<br /> Rohini,
+      Delhi, 110042
+      </p>
+      <p>
+      dsc.dtu@gmail.com
+      <br />
+      +91 96501 29191{new Date().getFullYear()}</p>
     </div>
   </footer>
 );
