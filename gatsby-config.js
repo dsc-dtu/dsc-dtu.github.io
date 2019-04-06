@@ -25,6 +25,21 @@ module.exports = {
     `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'DSC DTU',
+        short_name: 'DSC-DTU',
+        start_url: '/',
+        background_color: 'white',
+        theme_color: 'black',
+        display: 'minimal-ui',
+        icon: 'src/images/dsc-logo.png'
+      },
+    },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -61,9 +76,6 @@ module.exports = {
         // Avoids sending pageview hits from custom paths
         exclude: ['/preview/**', '/do-not-track/me/too/'],
       },
-    },
-    {
-      resolve: `gatsby-plugin-sitemap`,
     },
     {
       resolve: `gatsby-plugin-nprogress`,
