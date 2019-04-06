@@ -1,6 +1,4 @@
 import React from "react";
-import { DiscussionEmbed } from "disqus-react";
-import MemberCard from "../components/member_card";
 import Layout from "../components/indexLayout";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
@@ -9,11 +7,11 @@ import GatsbyConfig from "../../gatsby-config";
 
 export default function BlogTemplate({ data }) {
   const { markdownRemark: post } = data;
-  const disqusShortname = "sosc";
-  const disqusConfig = {
-    identifier: post.frontmatter.title,
-    title: post.frontmatter.title
-  };
+  // const disqusShortname = "sosc";
+  // const disqusConfig = {
+  //   identifier: post.frontmatter.title,
+  //   title: post.frontmatter.title
+  // };
 
   return (
     <Layout>
@@ -33,10 +31,6 @@ export default function BlogTemplate({ data }) {
             {/**
              * Header section of the blog
              * inspired by Medium
-             * If you have already found that out then hear out the famous quote
-             *
-             *  " Good Designers copy, Great Designers Steal! "
-             *                          ~ Pablo Picasso
              */}
             <div data-aos="fade-up" className="header">
               <div className="contents">
@@ -46,13 +40,6 @@ export default function BlogTemplate({ data }) {
                 <div className="dash" />
 
                 <div className="author-section">
-                  <img
-                    alt=""
-                    className="author-img"
-                    src={`https://avatars1.githubusercontent.com/${
-                      post.frontmatter.author
-                    }?size=100`}
-                  />
                   <div className="author-details">
                     <div className="author-name">
                       <a
@@ -79,17 +66,6 @@ export default function BlogTemplate({ data }) {
               data-aos="fade-up"
               className="blog-contents"
               dangerouslySetInnerHTML={{ __html: post.html }}
-            />
-            <div className="team-section bottom-box">
-              <MemberCard
-                username={post.frontmatter.author}
-                full_name={post.frontmatter.name}
-                designation=""
-              />
-            </div>
-            <DiscussionEmbed
-              shortname={disqusShortname}
-              config={disqusConfig}
             />
           </div>
         </div>
