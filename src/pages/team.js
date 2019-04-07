@@ -6,10 +6,10 @@ import Layout from "../components/indexLayout";
 import MemberCard from "../components/member_card";
 import Img from "gatsby-image";
 
-function getMembers(data) {
+function getMembers(data,team) {
   let members = [];
-
-  let memberList = data.allMarkdownRemark.edges;
+  console.log(data[team]);
+  let memberList = data[team].edges;
 
   memberList.map(element => {
     return members.push(
@@ -29,7 +29,7 @@ const TeamsPage = ({ data }) => (
     <CustomHelmet page={GatsbyConfig.siteMetadata.team} />
     <div className="page">
       <div className="container">
-        <h2>Co-ordinators</h2>
+        <h2>Team-Lead</h2>
         <div className="team-section">
           {/* Card for coordinators */}
           <div className="member-card white-bg elevate"
@@ -51,8 +51,16 @@ const TeamsPage = ({ data }) => (
             </div>
           </div>
         </div>
-        <h2>Core Members</h2>
-        <div className="team-section">{getMembers(data)}</div>
+        <h2>Team Web</h2>
+        <div className="team-section">{getMembers(data, 'web')}</div>
+        <h2>Team ML</h2>
+        <div className="team-section">{getMembers(data, 'ml')}</div>
+        <h2>Team Android</h2>
+        <div className="team-section">{getMembers(data, 'android')}</div>
+        <h2>Team Android</h2>
+        <div className="team-section">{getMembers(data, 'android')}</div>
+        <h2>Non-tech team</h2>
+        <div className="team-section">{getMembers(data, 'pr')}</div>
       </div>
     </div>
   </Layout>
@@ -62,9 +70,51 @@ export default TeamsPage;
 
 export const teamQuery = graphql`
   query membersQuery {
-    allMarkdownRemark(
+    web :allMarkdownRemark(
       sort: { fields: [frontmatter___designation], order: DESC }
-      filter: { fileAbsolutePath: { regex: "/members/.*md$/" } }
+      filter: { fileAbsolutePath: { regex: "/members/.*md$/" },frontmatter :{designation : {regex: "/Web/"}} }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            username
+            name
+            designation
+          }
+        }
+      }
+    }
+ android : allMarkdownRemark(
+      sort: { fields: [frontmatter___designation], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/members/.*md$/" },frontmatter :{designation : {regex: "/Android/"}} }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            username
+            name
+            designation
+          }
+        }
+      }
+    }
+ ml : allMarkdownRemark(
+      sort: { fields: [frontmatter___designation], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/members/.*md$/" },frontmatter :{designation : {regex: "/ML/"}} }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            username
+            name
+            designation
+          }
+        }
+      }
+    }
+    pr : allMarkdownRemark(
+      sort: { fields: [frontmatter___designation], order: DESC }
+      filter: { fileAbsolutePath: { regex: "/members/.*md$/" },frontmatter :{designation : {regex: "/PR/"}} }
     ) {
       edges {
         node {

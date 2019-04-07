@@ -1,5 +1,5 @@
 ---
-username:  Priyansh Verma
+username:  PriyanshVerma
 name:   Priyansh Verma
 designation: Android
 email: rachithabayar@gmail.com
