@@ -28,7 +28,8 @@
     .brand {
       color: #404140;
       font-size: 1.8em;
-      font-weight: bold;
+      font-weight: 1000;
+      font-family: arvo;
       
 
       @media #{$media-mobile} {

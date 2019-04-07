@@ -13,9 +13,12 @@ On 27-02-2019, Kshitij Bansal, DSC Lead, conducted a workshop for students of De
 
 ## Details
 
-Elit veniam magna adipisicing enim incididunt qui officia sit adipisicing irure nulla incididunt non. Enim ipsum excepteur veniam cupidatat elit. Reprehenderit nulla pariatur aliquip et consequat aute consequat cupidatat exercitation proident. Dolor quis est dolore laborum. Incididunt et exercitation nostrud deserunt duis nisi. Adipisicing nisi ex officia qui aliquip exercitation qui aute ea ipsum commodo.
+Developer Student Clubs chapter in DTU, an initiative by Google Developers, conducted an orientation in the last week of February. This introductory session led by Kshitij Bansal, the DSC(DTU) Lead, witnessed a delightful show of software and coding enthusiasts and tech learners.
 
-Elit veniam magna adipisicing enim incididunt qui officia sit adipisicing irure nulla incididunt non. Enim ipsum excepteur veniam cupidatat elit. Reprehenderit nulla pariatur aliquip et consequat aute consequat cupidatat exercitation proident. Dolor quis est dolore laborum. Incididunt et exercitation nostrud deserunt duis nisi. Adipisicing nisi ex officia qui aliquip exercitation qui aute ea ipsum commodo. Elit veniam magna adipisicing enim incididunt qui officia sit adipisicing irure nulla incididunt non. Enim ipsum excepteur veniam cupidatat elit. Reprehenderit nulla pariatur aliquip et consequat aute consequat cupidatat exercitation proident. Dolor quis est dolore laborum. Incididunt et exercitation nostrud deserunt duis nisi. Adipisicing nisi ex officia qui aliquip exercitation qui aute ea ipsum commodo.
+An interactive session which soon followed, cleared all queries that were asked by students about concerned fields such as ML,Android and Web Development. Recruitment interviews for the core and learning teams were conducted soon after.
+
+To know more about Developer Student Clubs by Google Developers visit : https://developers.google.com/programs/dsc/
+Follow us for more exciting updates about the club activities, workshops and much more!
 
 ## Some links
 

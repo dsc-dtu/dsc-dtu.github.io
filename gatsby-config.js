@@ -35,7 +35,7 @@ module.exports = {
         start_url: '/',
         background_color: 'white',
         theme_color: 'black',
-        display: 'minimal-ui',
+        display: 'standalone',
         icon: 'src/images/dsc-logo.png'
       },
     },
