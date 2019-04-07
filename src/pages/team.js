@@ -112,7 +112,7 @@ export const teamQuery = graphql`
     }
     pr : allMarkdownRemark(
       sort: { fields: [frontmatter___designation], order: DESC }
-      filter: { fileAbsolutePath: { regex: "/members/.*md$/" },frontmatter :{designation : {regex: "/PR/"}} }
+      filter: { fileAbsolutePath: { regex: "/members/.*md$/" },frontmatter :{designation : {regex: "/(PR|Designer)/"}} }
     ) {
       edges {
         node {
