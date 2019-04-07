@@ -57,8 +57,6 @@ const TeamsPage = ({ data }) => (
         <div className="team-section">{getMembers(data, 'ml')}</div>
         <h2>Team Android</h2>
         <div className="team-section">{getMembers(data, 'android')}</div>
-        <h2>Team Android</h2>
-        <div className="team-section">{getMembers(data, 'android')}</div>
         <h2>Non-tech team</h2>
         <div className="team-section">{getMembers(data, 'pr')}</div>
       </div>
