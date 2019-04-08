@@ -22,7 +22,7 @@ Follow us for more exciting updates about the club activities, workshops and muc
 
 ## Some links
 
-- [Github](https://github.com/dsc-dtu.com)
+- [Github](https://github.com/dsc-dtu/)
 - [LinkedIn](https://www.linkedin.com/company/dsc-dtu/)
 - [Facebook](https://facebook.com/pg/googledscdtu)
 - [Instagram](https://www.instagram.com/googledscdtu/)
