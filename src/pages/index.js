@@ -18,7 +18,7 @@ const IndexPage = props => (
             <p className="sosc-header">
             Developer Student Club (DTU)  <br></br> powered by Google Developers
             </p>
-            <p>
+            <p style={{fontSize: '20px'}}>
               Developer Student Club (DSC) is a Google Developers program for
               university students to learn mobile and web development skills.
               The club will be open to any student, ranging from novice
@@ -47,7 +47,7 @@ const IndexPage = props => (
           <div className="hero-texts">
             <p className="hero-header">What do we do?</p>
             <div className="dash" />
-            <p>
+            <p style={{fontSize: '20px'}}>            
               Google Developer Groups can take many forms - from just a few
               people getting together to watch some videos, to large gatherings
               with demos, tech talks, hackathons and conferences. We work on
@@ -64,7 +64,7 @@ const IndexPage = props => (
           <div className="hero-texts">
             <p className="hero-header">Get Trained in Various Domains</p>
             <div className="dash" />
-            <p>
+            <p style={{fontSize: '20px'}}>            
               The DSC-DTU provide students with the opportunity to: Grow their
               knowledge on developer technologies and more through peer to peer
               workshops and events, gain relevant industry experience by solving
@@ -92,7 +92,7 @@ const IndexPage = props => (
           <div className="hero-texts">
             <p className="hero-header">Get Connected !</p>
             <div className="dash" />
-            <p>
+            <p style={{fontSize: '20px'}}>            
               Meet our memebers with similar interest to work together on
               projects and host events to build a better collaborative
               environment. We are more than 15 members with interests on various
