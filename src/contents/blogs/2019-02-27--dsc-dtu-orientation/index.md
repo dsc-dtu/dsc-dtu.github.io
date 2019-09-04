@@ -18,9 +18,9 @@ Developer Student Clubs chapter in DTU, an initiative by Google Developers, cond
 An interactive session which soon followed, cleared all queries that were asked by students about concerned fields such as ML,Android and Web Development. Recruitment interviews for the core and learning teams were conducted soon after.
 
 To know more about Developer Student Clubs by Google Developers visit : https://developers.google.com/programs/dsc/
-Follow us for more exciting updates about the club activities, workshops and much more!
 
 ## Some links
+Follow us for more exciting updates about the club activities, workshops and much more!
 
 - [Github](https://github.com/dsc-dtu/)
 - [LinkedIn](https://www.linkedin.com/company/dsc-dtu/)
