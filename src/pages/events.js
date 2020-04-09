@@ -16,6 +16,7 @@ function getEvents(data) {
 				cover={node.frontmatter.cover}
 				title={node.frontmatter.name}
 				date={node.frontmatter.date}
+				key={node.frontmatter.name}
 			/>
 		);
 	});

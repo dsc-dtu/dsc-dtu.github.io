@@ -8,7 +8,7 @@ import Img from "gatsby-image";
 
 function getMembers(data, team) {
 	let members = [];
-	// console.log(data[team]);
+	console.log(data[team]);
 	let memberList = data[team].edges;
 
 	memberList.map((element) => {
@@ -17,7 +17,6 @@ function getMembers(data, team) {
 				username={element.node.frontmatter.username}
 				full_name={element.node.frontmatter.name}
 				designation={element.node.frontmatter.designation}
-				key={element.node.frontmatter.username}
 			/>
 		);
 	});
@@ -27,12 +26,11 @@ function getMembers(data, team) {
 
 const TeamsPage = ({ data }) => (
 	<Layout>
-		<CustomHelmet page={GatsbyConfig.siteMetadata.team} />
+		{/* <CustomHelmet page={GatsbyConfig.siteMetadata.team} />
 		<div className="page">
 			<div className="container">
 				<h2>Team-Lead</h2>
 				<div className="team-section">
-					{/* Card for coordinators */}
 					<div
 						className="member-card white-bg elevate"
 						onClick={() => window.open(`https://github.com/zenith1598`, "_blank")}
@@ -60,77 +58,24 @@ const TeamsPage = ({ data }) => (
 				<h2>Non-tech team</h2>
 				<div className="team-section">{getMembers(data, "pr")}</div>
 			</div>
-		</div>
+		</div> */}
+		<h1>Projects</h1>
+		{console.log(data)}
 	</Layout>
 );
 
 export default TeamsPage;
 
-export const teamQuery = graphql`
-	query membersQuery {
-		web: allMarkdownRemark(
-			sort: { fields: [frontmatter___designation], order: DESC }
-			filter: { fileAbsolutePath: { regex: "/members/.*md$/" }, frontmatter: { designation: { regex: "/Web/" } } }
-		) {
+export const projectsQuery = graphql`
+	query projectsQuery {
+		all: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/projects/.*md$/" } }) {
 			edges {
 				node {
 					frontmatter {
-						username
+						id
 						name
-						designation
+						description
 					}
-				}
-			}
-		}
-		android: allMarkdownRemark(
-			sort: { fields: [frontmatter___designation], order: DESC }
-			filter: { fileAbsolutePath: { regex: "/members/.*md$/" }, frontmatter: { designation: { regex: "/Android/" } } }
-		) {
-			edges {
-				node {
-					frontmatter {
-						username
-						name
-						designation
-					}
-				}
-			}
-		}
-		ml: allMarkdownRemark(
-			sort: { fields: [frontmatter___designation], order: DESC }
-			filter: { fileAbsolutePath: { regex: "/members/.*md$/" }, frontmatter: { designation: { regex: "/ML/" } } }
-		) {
-			edges {
-				node {
-					frontmatter {
-						username
-						name
-						designation
-					}
-				}
-			}
-		}
-		pr: allMarkdownRemark(
-			sort: { fields: [frontmatter___designation], order: DESC }
-			filter: {
-				fileAbsolutePath: { regex: "/members/.*md$/" }
-				frontmatter: { designation: { regex: "/(PR|Designer)/" } }
-			}
-		) {
-			edges {
-				node {
-					frontmatter {
-						username
-						name
-						designation
-					}
-				}
-			}
-		}
-		imageCoord1: file(relativePath: { eq: "images/KshitijBansal.jpg" }) {
-			childImageSharp {
-				fluid(maxWidth: 200) {
-					...GatsbyImageSharpFluid_tracedSVG
 				}
 			}
 		}

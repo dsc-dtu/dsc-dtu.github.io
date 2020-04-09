@@ -8,7 +8,7 @@ function getBlogs(data) {
 	let blogList = data.allMarkdownRemark.edges;
 
 	blogList.forEach((element) => {
-		blogs.push(<BlogCard data={element.node.frontmatter} />);
+		blogs.push(<BlogCard data={element.node.frontmatter} key={element.node.frontmatter.date} />);
 	});
 
 	return blogs;
@@ -20,14 +20,6 @@ const BlogsPage = ({ data }) => (
 			<div className="container">
 				<section className="blog-section">
 					<div className="blog-posts">{getBlogs(data)}</div>
-					{/*
-          
-            <div className="blog-newsletter">
-              <div className="news-card">
-                <img alt="" src="" />
-              </div>
-            </div>
-            */}
 				</section>
 			</div>
 		</div>

@@ -6,15 +6,15 @@ import Footer from "./footer";
 import "../sass/index.scss";
 
 const Layout = ({ children }) => (
-  <div id="flexContainer">
-    <Header siteTitle="DSC-DTU" />
-    <main>{children}</main>
-    <Footer />
-  </div>
+	<div id="flexContainer">
+		<Header siteTitle="DSC-DTU" />
+		<main>{children}</main>
+		<Footer />
+	</div>
 );
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
+	children: PropTypes.node.isRequired,
 };
 
 export default Layout;

@@ -1,3 +1,3 @@
 module.exports = {
-  feedback_days: 7,
-}
+	feedback_days: 7,
+};
