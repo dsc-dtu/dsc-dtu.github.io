@@ -37,9 +37,7 @@ const ClubsPage = ({ data }) => {
       expertsList.push(
         <div className={Styles.profileCard}>
           <img
-            src={`https://avatars1.githubusercontent.com/${
-              frontmatter.github
-            }?size=200`}
+            src={`https://avatars1.githubusercontent.com/${frontmatter.github}?size=200`}
             alt={frontmatter.name}
           />
           <div className={Styles.details}>

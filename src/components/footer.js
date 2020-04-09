@@ -12,15 +12,17 @@ const Footer = ({ siteTitle }) => (
         </div>
         <div className="column" />
         <div className="column">
-          <strong>Delhi Technological University</strong> Bawana Road, Daulatpur Village, Rohini, Delhi, 110042    
+          <strong>Delhi Technological University</strong> Bawana Road, Daulatpur
+          Village, Rohini, Delhi, 110042
         </div>
       </div>
     </div>
-    <div className="copyright-area" style={{textAlign: 'center'}}>
+    <div className="copyright-area" style={{ textAlign: "center" }}>
       <p>
-      dsc.dtu@gmail.com
-      <br />
-      +91 96501 29191</p>
+        dsc.dtu@gmail.com
+        <br />
+        +91 96501 29191
+      </p>
     </div>
   </footer>
 );
