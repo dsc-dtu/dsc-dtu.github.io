@@ -9,7 +9,7 @@ function getProjects(data) {
 	let projects = [];
 
 	data.forEach((element, index) => {
-		projects.push(<ProjectCard data={element.node.frontmatter} index={index} key={`project_${index}`} />);
+		projects.push(<ProjectCard data={element.node.frontmatter} key={`project_${index}`} />);
 	});
 
 	return projects;

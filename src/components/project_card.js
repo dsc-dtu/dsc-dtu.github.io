@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
 
-const ProjectCard = ({ data, index }) => (
+const ProjectCard = ({ data }) => (
 	<div className="project-card elevate white-bg">
-		{console.log(index)}
 		<div className="card-content">
 			<img src={data.icon} alt={data.name} className="icon" />
 			<div className="text">

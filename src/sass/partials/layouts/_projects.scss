@@ -1,7 +1,6 @@
 .project-header {
 	margin-top: 20px;
 	display: flex;
-	// flex-basis: 50%;
 	flex-grow: 0;
 	flex-direction: column;
 	justify-content: center;
@@ -57,62 +56,62 @@
 				padding: 10px;
 				width: auto;
 			}
-		}
-	}
 
-	.icon {
-		width: 10%;
-		@media #{$media-mobile} {
-			width: 100%;
-		}
-		@media #{$media-small} {
-			width: 100%;
-		}
-	}
+			.icon {
+				width: 10%;
+				@media #{$media-mobile} {
+					width: 100%;
+				}
+				@media #{$media-small} {
+					width: 100%;
+				}
+			}
 
-	.text {
-		padding: 5px 15px 15px 15px;
-	}
+			.text {
+				padding: 5px 15px 15px 15px;
 
-	.title {
-		font-size: 1.4em;
-		font-weight: bold;
-		color: #373738;
-		padding: 10px 10px 10px 0;
-		text-decoration: none;
-		color: #373738;
+				.title {
+					font-size: 1.4em;
+					font-weight: bold;
+					color: #373738;
+					padding: 10px 10px 10px 0;
+					text-decoration: none;
+					color: #373738;
 
-		h2 {
-			font-size: 1em;
-			margin: 0;
-		}
-	}
-	.description {
-		display: flex;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-	}
-	.link-box {
-		flex-grow: 1;
-		justify-self: flex-end;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		margin-top: 20px;
+					h2 {
+						font-size: 1em;
+						margin: 0;
+					}
+				}
+				.description {
+					display: flex;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 2;
+					-webkit-box-orient: vertical;
+				}
+				.link-box {
+					flex-grow: 1;
+					justify-self: flex-end;
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					margin-top: 20px;
 
-		a {
-			margin-right: 10px;
-		}
+					a {
+						margin-right: 10px;
+					}
 
-		button {
-			font-size: 15px;
-			padding: 13px;
-			color: white;
-			border: 1px solid transparent;
-			border-radius: 14px;
+					button {
+						font-size: 15px;
+						padding: 13px;
+						color: white;
+						border: 1px solid transparent;
+						border-radius: 14px;
+					}
+				}
+			}
 		}
 	}
 }
