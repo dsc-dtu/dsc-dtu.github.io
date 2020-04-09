@@ -126,6 +126,9 @@
 
 					a {
 						margin-right: 10px;
+						:hover {
+							cursor: pointer;
+						}
 					}
 
 					button {
@@ -134,6 +137,10 @@
 						color: white;
 						border: 1px solid transparent;
 						border-radius: 14px;
+
+						:hover {
+							cursor: pointer;
+						}
 					}
 				}
 			}
