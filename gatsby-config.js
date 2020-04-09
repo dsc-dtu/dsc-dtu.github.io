@@ -1,22 +1,22 @@
 module.exports = {
 	siteMetadata: {
 		title: "DSC-DTU",
-		siteUrl: "https://sosc.org.in",
+		siteUrl: "https://dsc-dtu.github.io",
 		events: {
-			title: "DSC-DTU - Events",
-			siteUrl: "https://sosc.org.in/events",
+			title: "DSC-DTU Events",
+			siteUrl: "https://dsc-dtu.github.io/events",
 		},
 		team: {
 			title: "DSC-DTU Team",
-			siteUrl: "https://sosc.org.in/team",
+			siteUrl: "https://dsc-dtu.github.io/team",
 		},
 		blog: {
-			title: "DSC-DTU - Blog",
-			siteUrl: "https://sosc.org.in/blog",
+			title: "DSC-DTU Blog",
+			siteUrl: "https://dsc-dtu.github.io/blog",
 		},
-		memberDetails: {
-			title: "SOSC - Member Details",
-			siteUrl: "https://sosc.org.in/member-details",
+		projects: {
+			title: "DSC-DTU Projects",
+			siteUrl: "https://dsc-dtu.github.io/projects",
 		},
 	},
 	plugins: [

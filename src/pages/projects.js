@@ -3,64 +3,38 @@ import { graphql } from "gatsby";
 import GatsbyConfig from "../../gatsby-config";
 import CustomHelmet from "../components/CustomHelmet";
 import Layout from "../components/indexLayout";
-import MemberCard from "../components/member_card";
-import Img from "gatsby-image";
+import ProjectCard from "../components/project_card";
 
-function getMembers(data, team) {
-	let members = [];
-	console.log(data[team]);
-	let memberList = data[team].edges;
+function getProjects(data) {
+	let projects = [];
 
-	memberList.map((element) => {
-		return members.push(
-			<MemberCard
-				username={element.node.frontmatter.username}
-				full_name={element.node.frontmatter.name}
-				designation={element.node.frontmatter.designation}
-			/>
-		);
+	data.forEach((element, index) => {
+		projects.push(<ProjectCard data={element.node.frontmatter} index={index} key={`project_${index}`} />);
 	});
 
-	return members;
+	return projects;
 }
 
 const TeamsPage = ({ data }) => (
 	<Layout>
-		{/* <CustomHelmet page={GatsbyConfig.siteMetadata.team} />
+		<CustomHelmet page={GatsbyConfig.siteMetadata.projects} />
 		<div className="page">
 			<div className="container">
-				<h2>Team-Lead</h2>
-				<div className="team-section">
-					<div
-						className="member-card white-bg elevate"
-						onClick={() => window.open(`https://github.com/zenith1598`, "_blank")}
-						onMouseEnter={() => {
-							document.body.style.cursor = "pointer";
-						}}
-						onMouseLeave={() => {
-							document.body.style.cursor = "default";
-						}}
-					>
-						<Img fluid={data.imageCoord1.childImageSharp.fluid} className="profile-pic" />
-
-						<div className="member-details">
-							<h3 className="name">Kshitij Bansal</h3>
-							<p className="designation">DSC Lead</p>
-						</div>
-					</div>
+				<div className="project-header">
+					<p className="header">Open Source Projects powered by DSC DTU</p>
+					<p style={{ fontSize: "20px" }}>
+						Ullamco magna aute consectetur labore incididunt est ullamco. Eiusmod culpa ipsum laboris dolore culpa velit
+						velit eiusmod labore. Voluptate mollit cupidatat commodo et deserunt qui mollit ad mollit deserunt
+						reprehenderit. Sunt duis fugiat cillum deserunt pariatur do anim. Esse amet ut do anim aute laboris anim
+						commodo minim ex minim. Here are some of our projects that you can contribute to and work with some of our
+						very skilled members.
+					</p>
 				</div>
-				<h2>Team Web</h2>
-				<div className="team-section">{getMembers(data, "web")}</div>
-				<h2>Team ML</h2>
-				<div className="team-section">{getMembers(data, "ml")}</div>
-				<h2>Team Android</h2>
-				<div className="team-section">{getMembers(data, "android")}</div>
-				<h2>Non-tech team</h2>
-				<div className="team-section">{getMembers(data, "pr")}</div>
+				<section className="project-section">
+					<div style={{ width: "100%" }}>{getProjects(data.all.edges)}</div>
+				</section>
 			</div>
-		</div> */}
-		<h1>Projects</h1>
-		{console.log(data)}
+		</div>
 	</Layout>
 );
 
@@ -75,6 +49,9 @@ export const projectsQuery = graphql`
 						id
 						name
 						description
+						github
+						icon
+						url
 					}
 				}
 			}
