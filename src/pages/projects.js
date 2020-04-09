@@ -51,7 +51,6 @@ export const projectsQuery = graphql`
 						description
 						github
 						icon
-						url
 					}
 				}
 			}

@@ -14,9 +14,6 @@ const ProjectCard = ({ data, index }) => (
 					<a href={data.github} target="default">
 						<button style={{ backgroundColor: "black" }}>Github</button>
 					</a>
-					<a href={data.url} target="default">
-						<button style={{ backgroundColor: "blue" }}>Website</button>
-					</a>
 				</div>
 			</div>
 		</div>
