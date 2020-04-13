@@ -23,11 +23,9 @@ const TeamsPage = ({ data }) => (
 				<div className="project-header">
 					<p className="header">Open Source Projects powered by DSC DTU</p>
 					<p style={{ fontSize: "20px" }}>
-						Ullamco magna aute consectetur labore incididunt est ullamco. Eiusmod culpa ipsum laboris dolore culpa velit
-						velit eiusmod labore. Voluptate mollit cupidatat commodo et deserunt qui mollit ad mollit deserunt
-						reprehenderit. Sunt duis fugiat cillum deserunt pariatur do anim. Esse amet ut do anim aute laboris anim
-						commodo minim ex minim. Here are some of our projects that you can contribute to and work with some of our
-						very skilled members.
+						Open source is a philosophy and a movement. We at DSC-DTU bring to you some Open Source Projects powered by
+						us, inviting new ideas, adaptations and innovations, to drive forward the movement. Here are some of our
+						projects that you can contribute to and work with our team.
 					</p>
 				</div>
 				<section className="project-section">
