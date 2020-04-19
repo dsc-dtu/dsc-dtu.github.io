@@ -44,7 +44,6 @@ export const projectsQuery = graphql`
 			edges {
 				node {
 					frontmatter {
-						id
 						name
 						description
 						github

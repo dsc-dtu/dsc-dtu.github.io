@@ -1,5 +1,4 @@
 ---
-id: put-away
 name: PutAway
 description: A new-tab page chrome extension for tab management and bookmarks made with SvelteJS.
 github: https://github.com/mannprerak2/putaway
