@@ -18,6 +18,10 @@ module.exports = {
 			title: "DSC-DTU Projects",
 			siteUrl: "https://dsc-dtu.github.io/projects",
 		},
+		alumni: {
+			title: "DSC-DTU Alumni",
+			siteUrl: "https://dsc-dtu.github.io/alumni",
+		},
 	},
 	plugins: [
 		"gatsby-plugin-react-helmet",
