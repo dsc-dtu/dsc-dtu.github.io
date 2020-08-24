@@ -26,7 +26,7 @@ function getMembers(data, team) {
 
 const TeamsPage = ({ data }) => (
 	<Layout>
-		<CustomHelmet page={GatsbyConfig.siteMetadata.team} />
+		<CustomHelmet page={GatsbyConfig.siteMetadata.alumni} />
 		<div className="page">
 			<div className="container">
 				<h2>Batch of 2020</h2>
