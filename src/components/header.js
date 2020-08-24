@@ -47,6 +47,11 @@ const Header = ({ siteTitle }) => (
 							Team
 						</Link>
 					</li>
+					<li>
+						<Link to="/alumni" activeClassName="active">
+							Alumni
+						</Link>
+					</li>
 				</ul>
 			</div>
 		</div>

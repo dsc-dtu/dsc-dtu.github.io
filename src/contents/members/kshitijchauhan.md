@@ -1,5 +1,5 @@
 ---
-username: haroldadmin   
+username: haroldadmin
 name: Kshitij Chauhan
-designation: Android
+designation: Android Lead
 ---
