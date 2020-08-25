@@ -35,7 +35,9 @@ const TeamsPage = ({ data }) => (
 					{/* Card for coordinators */}
 					<div
 						className="member-card white-bg elevate"
-						onClick={() => window.open(`https://github.com/zenith1598`, "_blank")}
+						onClick={() =>
+							window.open(`https://github.com/priyanka2399`, "_blank")
+						}
 						onMouseEnter={() => {
 							document.body.style.cursor = "pointer";
 						}}
@@ -43,10 +45,13 @@ const TeamsPage = ({ data }) => (
 							document.body.style.cursor = "default";
 						}}
 					>
-						<Img fluid={data.imageCoord1.childImageSharp.fluid} className="profile-pic" />
+						<Img
+							fluid={data.imageCoord1.childImageSharp.fluid}
+							className="profile-pic"
+						/>
 
 						<div className="member-details">
-							<h3 className="name">Kshitij Bansal</h3>
+							<h3 className="name">Priyanka Agarwal</h3>
 							<p className="designation">DSC Lead</p>
 						</div>
 					</div>
@@ -70,7 +75,10 @@ export const teamQuery = graphql`
 	query membersQuery {
 		web: allMarkdownRemark(
 			sort: { fields: [frontmatter___designation], order: DESC }
-			filter: { fileAbsolutePath: { regex: "/members/.*md$/" }, frontmatter: { designation: { regex: "/Web/" } } }
+			filter: {
+				fileAbsolutePath: { regex: "/members/.*md$/" }
+				frontmatter: { designation: { regex: "/Web/" } }
+			}
 		) {
 			edges {
 				node {
@@ -84,7 +92,10 @@ export const teamQuery = graphql`
 		}
 		android: allMarkdownRemark(
 			sort: { fields: [frontmatter___designation], order: DESC }
-			filter: { fileAbsolutePath: { regex: "/members/.*md$/" }, frontmatter: { designation: { regex: "/Android/" } } }
+			filter: {
+				fileAbsolutePath: { regex: "/members/.*md$/" }
+				frontmatter: { designation: { regex: "/Android/" } }
+			}
 		) {
 			edges {
 				node {
@@ -98,7 +109,10 @@ export const teamQuery = graphql`
 		}
 		ml: allMarkdownRemark(
 			sort: { fields: [frontmatter___designation], order: DESC }
-			filter: { fileAbsolutePath: { regex: "/members/.*md$/" }, frontmatter: { designation: { regex: "/ML/" } } }
+			filter: {
+				fileAbsolutePath: { regex: "/members/.*md$/" }
+				frontmatter: { designation: { regex: "/ML/" } }
+			}
 		) {
 			edges {
 				node {
@@ -114,7 +128,7 @@ export const teamQuery = graphql`
 			sort: { fields: [frontmatter___designation], order: DESC }
 			filter: {
 				fileAbsolutePath: { regex: "/members/.*md$/" }
-				frontmatter: { designation: { regex: "/(PR|Designer)/" } }
+				frontmatter: { designation: { regex: "/(Non-Tech|PR|Designer)/" } }
 			}
 		) {
 			edges {
@@ -127,7 +141,7 @@ export const teamQuery = graphql`
 				}
 			}
 		}
-		imageCoord1: file(relativePath: { eq: "images/KshitijBansal.jpg" }) {
+		imageCoord1: file(relativePath: { eq: "images/priyankaA.jpeg" }) {
 			childImageSharp {
 				fluid(maxWidth: 200) {
 					...GatsbyImageSharpFluid_tracedSVG
