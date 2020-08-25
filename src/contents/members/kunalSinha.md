@@ -1,5 +1,5 @@
 ---
 username:
 name: Kunal Sinha
-designation: Non-Tech Lead & Graphic Designer
+designation: Non-Tech Lead
 ---

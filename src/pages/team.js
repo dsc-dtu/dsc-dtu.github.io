@@ -128,7 +128,7 @@ export const teamQuery = graphql`
 			sort: { fields: [frontmatter___designation], order: DESC }
 			filter: {
 				fileAbsolutePath: { regex: "/members/.*md$/" }
-				frontmatter: { designation: { regex: "/(PR|Designer)/" } }
+				frontmatter: { designation: { regex: "/(Non-Tech|PR|Designer)/" } }
 			}
 		) {
 			edges {
