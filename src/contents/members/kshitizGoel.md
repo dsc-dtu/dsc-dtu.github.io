@@ -1,5 +1,5 @@
 ---
 username: KshitizGoel
-name: Haresh Nayak
+name: Kshitiz Goel
 designation: Android
 ---

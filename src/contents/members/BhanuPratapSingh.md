@@ -1,5 +1,5 @@
 ---
 username: hiiambhanu
 name: Bhanu Pratap Singh
-designation: Web
+designation: Web Co-Head
 ---

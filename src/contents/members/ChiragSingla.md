@@ -1,5 +1,5 @@
 ---
 username: chiragsingla17
 name: Chirag Singla
-designation: ML Lead
+designation: ML Head
 ---

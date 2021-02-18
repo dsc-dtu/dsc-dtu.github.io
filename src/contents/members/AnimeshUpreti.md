@@ -1,5 +1,5 @@
 ---
 username: anxmesh
 name: Animesh Upreti
-designation: Content Writing & PR
+designation: Non-Tech Co-Head
 ---

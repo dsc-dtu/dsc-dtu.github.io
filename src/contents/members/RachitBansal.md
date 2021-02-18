@@ -1,5 +1,5 @@
 ---
 username: RachitBansal
 name: Rachit Bansal
-designation: ML
+designation: ML Co-Head
 ---
