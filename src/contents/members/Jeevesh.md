@@ -1,5 +1,5 @@
 ---
 username: Jeevesh8
 name: Jeevesh
-designation: ML
+designation: ML Co-Head
 ---

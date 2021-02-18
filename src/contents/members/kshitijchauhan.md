@@ -1,5 +1,5 @@
 ---
 username: haroldadmin
 name: Kshitij Chauhan
-designation: Android Lead
+designation: Android Head
 ---
