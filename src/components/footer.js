@@ -21,7 +21,7 @@ const Footer = ({ siteTitle }) => (
       <p>
         dsc.dtu@gmail.com
         <br />
-        +91 96501 29191
+        +91 98149 45716
       </p>
     </div>
   </footer>
